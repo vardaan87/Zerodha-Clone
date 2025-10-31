@@ -1,0 +1,17 @@
+.nav-link {
+  margin-left: 30px;
+}
+
+.signup {
+  background-color: rgb(56, 126, 209);
+  color: white;
+}
+
+.signup:hover {
+  background-color: black;
+  color: white;
+}
+
+.fcol {
+  color: rgb(66, 66, 66);
+}
