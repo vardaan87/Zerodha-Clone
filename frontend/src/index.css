@@ -15,3 +15,48 @@
 .fcol {
   color: rgb(66, 66, 66);
 }
+
+.custom-ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.custom-ul li {
+  position: relative;
+  padding-left: 18px; /* space for bullet */
+}
+
+.custom-ul li::before {
+  content: "•";
+  color: blue; /* bullet color */
+  position: absolute;
+  left: 0;
+  top: 0;
+  font-size: 20px; /* adjust bullet size if needed */
+  line-height: 18px;
+}
+
+.blue-numbers {
+  list-style: none;
+  counter-reset: item;
+}
+
+.blue-numbers > li {
+  counter-increment: item;
+}
+
+.blue-numbers > li::before {
+  content: counter(item) ". ";
+  color: #0d6efd; /* Bootstrap primary blue */
+  font-weight: 500;
+}
+
+.smooth-collapse {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s ease;
+}
+
+.smooth-collapse.show {
+  max-height: 500px; /* Set large enough to fit the content */
+}

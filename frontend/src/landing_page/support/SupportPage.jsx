@@ -1,4 +1,12 @@
+import CreateTicket from "./CreateTicket";
+import Hero from "./Hero";
+
 const SupportPage = () => {
-  return <div>SupportPage</div>;
+  return (
+    <>
+      <Hero />
+      <CreateTicket />
+    </>
+  );
 };
 export default SupportPage;
